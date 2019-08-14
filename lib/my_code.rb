@@ -2,7 +2,7 @@
 
 def map(source)
   newArray = []
-  
+  yield
   newArray
 end
 
