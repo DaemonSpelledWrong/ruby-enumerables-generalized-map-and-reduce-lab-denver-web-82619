@@ -16,6 +16,8 @@ def reduce(source_array, memo = 0)
     while i < source_array.length do
     if source_array[i]
      return total = true
+    elsif total == source_array.length
+      return true
     else
       total = false
       i += 1
