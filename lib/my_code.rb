@@ -12,7 +12,14 @@ end
 
 def reduce(source_array, memo = 0)
   i = 0
-  total = memo
-  
+  total = 0
+    while i < source_array.length do
+    if source_array[i]
+     return total = true
+    else
+      total = false
+      i += 1
+    end
+  end
   total
 end
