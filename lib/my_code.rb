@@ -10,12 +10,9 @@ def map(source_array)
   new_array
 end
 
-def reduce(source_array, memo = 0)
-  i = 0
-  total = memo
-  while i < source_array.length do
-    total = yield(total, source_array[i])
-    i += 1
+def reduce(accumulator, &block)
+  each do |element|
+    accumulator = block.call(accumulator, element)
   end
-  total
+  accumulator
 end
