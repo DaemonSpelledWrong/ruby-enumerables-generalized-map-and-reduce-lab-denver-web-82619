@@ -15,9 +15,6 @@ def reduce(source_array, memo = 0)
   total = memo
   while i < source_array.length do
     total = yield(total, source_array[i])
-    if source_array == true
-      return true
-    end
     i += 1
   end
   total
