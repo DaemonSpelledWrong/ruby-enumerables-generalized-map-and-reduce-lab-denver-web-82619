@@ -16,5 +16,5 @@ def reduce(source_array, memo = 0)
     yield(source_array[i])
     i += 1
   end
-  total
+  memo
 end
